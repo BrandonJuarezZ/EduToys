@@ -3,67 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <title>EduToys - Productos / Servicios</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>EduToys</h1>
-    <p>Tienda de juguetes didácticos y estimulación temprana</p>
+    <div class="brand-container">
+      <img src="logo.png" alt="Logo de EduToys" class="logo-img">
+      <h1>Edu<span>Toys</span></h1>
+    </div>
+    <p>Juguetes que inspiran mentes curiosas 🧸🚀</p>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
-        <li><a href="productos.html">Productos / Servicios</a></li>
+        <li><a href="productos.html" class="active">Productos / Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="seguridad.html">Políticas de seguridad</a></li>
       </ul>
     </nav>
   </header>
 
-  <hr>
-
   <main>
-    <section>
-      <h2>Productos y Servicios</h2>
-      <p>Conoce nuestro catálogo de juguetes y servicios orientados a diferentes etapas del desarrollo infantil.</p>
+    <section class="hero-banner">
+      <h2>Catálogo de Juguetes Didácticos 🎪</h2>
+      <p>Selecciona por edad y acompaña a tus hijos con las herramientas exactas para su etapa de desarrollo.</p>
     </section>
 
     <section>
-      <h3>Catálogo de Productos</h3>
+      <h3>Nuestros Juguetes Favoritos 🌟</h3>
+      <div class="cards-grid">
 
-      <article>
-        <h4>1. Sonajeros y Tapetes Sensoriales</h4>
-        <p><strong>Edad recomendada:</strong> 0 a 12 meses.</p>
-        <p><strong>Descripción:</strong> Diseñados con distintas texturas, colores llamativos y sonidos suaves para desarrollar los sentidos y el agarre.</p>
-      </article>
+        <!-- Producto 1 -->
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-verde">0 a 12 Meses</span>
+            <div style="font-size: 3rem; text-align: center; margin-bottom: 10px;">🔔</div>
+            <h4>Sonajeros y Tapetes Sensoriales</h4>
+            <p>Diseñados con texturas suaves, contrastes y sonajeros ligeros para estimular el agarre y los sentidos.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Sonajeros y Tapetes Sensoriales">Ver Juguete 🔍</button>
+        </article>
 
-      <article>
-        <h4>2. Bloques de Construcción de Madera</h4>
-        <p><strong>Edad recomendada:</strong> 1 a 4 años.</p>
-        <p><strong>Descripción:</strong> Piezas ligeras con pintura no tóxica para fomentar la coordinación ojo-mano y la imaginación.</p>
-      </article>
+        <!-- Producto 2 -->
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-azul">1 a 4 Años</span>
+            <div style="font-size: 3rem; text-align: center; margin-bottom: 10px;">🧱</div>
+            <h4>Bloques de Madera Creativos</h4>
+            <p>Piezas livianas, barnices al agua y bordes redondeados para armar torres, torres y torres sin parar.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Bloques de Madera Creativos">Ver Juguete 🔍</button>
+        </article>
 
-      <article>
-        <h4>3. Rompecabezas y Juegos de Lógica</h4>
-        <p><strong>Edad recomendada:</strong> 3 a 6 años.</p>
-        <p><strong>Descripción:</strong> Juegos de asociación de formas, números y letras que impulsan la concentración y el razonamiento.</p>
-      </article>
+        <!-- Producto 3 -->
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-lila">3 a 6 Años</span>
+            <div style="font-size: 3rem; text-align: center; margin-bottom: 10px;">🧩</div>
+            <h4>Rompecabezas y Lógica STEM</h4>
+            <p>Retos visuales que introducen números, figuras geométricas y deducción de manera entretenida.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Rompecabezas y Lógica STEM">Ver Juguete 🔍</button>
+        </article>
+
+      </div>
     </section>
 
     <section>
-      <h3>Nuestros Servicios</h3>
-      <ul>
-        <li><strong>Asesoría personalizada:</strong> Recomendación del juguete adecuado según la edad y etapa del niño.</li>
-        <li><strong>Paquetes escolares:</strong> Kits didácticos diseñados para guarderías y preescolares.</li>
-      </ul>
+      <h3>Servicios Especiales 🎒</h3>
+      <div class="cards-grid">
+        <div class="feature-box amarillo">
+          <span class="box-icon">📦</span>
+          <h4>Kits Escolares</h4>
+          <p>Paquetes con descuento y surtido didáctico para estancias infantiles y preescolar.</p>
+        </div>
+        <div class="feature-box coral">
+          <span class="box-icon">👩‍🏫</span>
+          <h4>Asesoría Personalizada</h4>
+          <p>¿No sabes cuál elegir? Te orientamos según la edad e intereses del niño.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <hr>
-
   <footer>
-    <p>&copy; 2026 EduToys</p>
+    <p>&copy; 2026 EduToys - Proyecto Escolar</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>

@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>EduToys - ¿Quiénes somos?</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>EduToys</h1>
-    <p>Tienda de juguetes didácticos y estimulación temprana</p>
+    <div class="brand-container">
+      <img src="logo.png" alt="Logo de EduToys" class="logo-img">
+      <h1>Edu<span>Toys</span></h1>
+    </div>
+    <p>Juguetes que inspiran mentes curiosas 🧸🚀</p>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
+        <li><a href="quienes-somos.html" class="active">¿Quiénes somos?</a></li>
         <li><a href="productos.html">Productos / Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
         <li><a href="seguridad.html">Políticas de seguridad</a></li>
@@ -20,39 +24,54 @@
     </nav>
   </header>
 
-  <hr>
-
   <main>
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>En EduToys somos un proyecto dedicado a seleccionar y brindar juguetes didácticos pensados para apoyar el aprendizaje integral de los niños desde sus primeros meses de edad.</p>
+    <section class="hero-banner">
+      <h2>Nuestra Historia y Pasión 💛</h2>
+      <p>En <strong>EduToys</strong> nacemos como un proyecto escolar convencido de que la infancia debe estar llena de color, exploración táctil y retos que diviertan sin aburrir.</p>
     </section>
 
     <section>
-      <h3>Nuestra Misión</h3>
-      <p>Fomentar la curiosidad, el desarrollo cognitivo y las habilidades psicomotrices en la infancia mediante el uso de juguetes seguros, educativos e interactivos.</p>
+      <h3>Misión y Visión 🎯</h3>
+      <div class="cards-grid">
+        <div class="feature-box azul">
+          <span class="box-icon">🚀</span>
+          <h4>Nuestra Misión</h4>
+          <p>Llevar a los hogares y aulas juguetes seguros que ayuden al crecimiento motriz, cognitivo y social de los niños.</p>
+        </div>
+        <div class="feature-box coral">
+          <span class="box-icon">🔭</span>
+          <h4>Nuestra Visión</h4>
+          <p>Ser la opción favorita de familias y docentes que buscan materiales de estimulación temprana de alta calidad.</p>
+        </div>
+      </div>
     </section>
 
     <section>
-      <h3>Nuestra Visión</h3>
-      <p>Ser una opción confiable para padres de familia y docentes que buscan materiales y herramientas de estimulación temprana de alta calidad.</p>
-    </section>
-
-    <section>
-      <h3>Nuestros Valores</h3>
-      <ul>
-        <li>Compromiso con la educación y la niñez.</li>
-        <li>Seguridad en todos los materiales.</li>
-        <li>Innovación y creatividad a través del juego.</li>
-      </ul>
+      <h3>Los Valores que nos Mueven 🎈</h3>
+      <div class="cards-grid">
+        <div class="feature-box verde">
+          <span class="box-icon">❤️</span>
+          <h4>Cariño por los Niños</h4>
+          <p>Cada producto se elige pensando en su bienestar y sonrisa.</p>
+        </div>
+        <div class="feature-box amarillo">
+          <span class="box-icon">🧼</span>
+          <h4>Calidad Limpia</h4>
+          <p>Materiales nobles, sostenibles y respetuosos con el ambiente.</p>
+        </div>
+        <div class="feature-box lila" style="border-color: var(--c-lila); box-shadow: 0 5px 0 #7a63b5;">
+          <span class="box-icon">💡</span>
+          <h4>Creatividad Total</h4>
+          <p>Juguetes que permiten miles de formas de jugar.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <hr>
-
   <footer>
-    <p>&copy; 2026 EduToys</p>
+    <p>&copy; 2026 EduToys - Proyecto Escolar</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
