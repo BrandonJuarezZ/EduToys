@@ -3,75 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>EduToys - Contacto</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>EduToys</h1>
-    <p>Tienda de juguetes didácticos y estimulación temprana</p>
+    <div class="brand-container">
+      <img src="logo.png" alt="Logo de EduToys" class="logo-img">
+      <h1>Edu<span>Toys</span></h1>
+    </div>
+    <p>Juguetes que inspiran mentes curiosas 🧸🚀</p>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
         <li><a href="productos.html">Productos / Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
         <li><a href="seguridad.html">Políticas de seguridad</a></li>
       </ul>
     </nav>
   </header>
 
-  <hr>
-
   <main>
-    <section>
-      <h2>Ponte en Contacto con Nosotros</h2>
-      <p>¿Tienes dudas sobre qué juguete elegir o necesitas información sobre pedidos escolares? Escríbenos y con gusto te orientamos.</p>
+    <!-- Banner de Contacto -->
+    <section class="hero-banner">
+      <h2>¡Hablemos de Juego y Aprendizaje! 📬</h2>
+      <p>¿Tienes dudas sobre qué juguete elegir según la edad de tu pequeño o buscas paquetes didácticos para tu escuela? ¡Escríbenos!</p>
     </section>
 
+    <!-- Formulario Amigable -->
     <section>
-      <h3>Formulario de Contacto</h3>
-      <form action="#" method="post">
-        <div>
-          <label for="nombre">Nombre completo:</label><br>
-          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+      <h3>Envíanos un Mensaje 💌</h3>
+      <form id="formulario-contacto" style="max-width: 650px; margin: 0 auto;">
+        
+        <div style="margin-bottom: 18px;">
+          <label for="nombre" style="display: block; font-weight: 700; margin-bottom: 6px;">Nombre de contacto:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej. Mariana López"
+                 style="width: 100%; padding: 12px 16px; border: 2px solid #e2ddf0; border-radius: 12px; font-family: inherit; font-size: 1rem; outline: none;">
         </div>
-        <br>
-        <div>
-          <label for="correo">Correo electrónico:</label><br>
-          <input type="email" id="correo" name="correo" required placeholder="correo@ejemplo.com">
+
+        <div style="margin-bottom: 18px;">
+          <label for="correo" style="display: block; font-weight: 700; margin-bottom: 6px;">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required placeholder="mariana@ejemplo.com"
+                 style="width: 100%; padding: 12px 16px; border: 2px solid #e2ddf0; border-radius: 12px; font-family: inherit; font-size: 1rem; outline: none;">
         </div>
-        <br>
-        <div>
-          <label for="motivo">Motivo de contacto:</label><br>
-          <select id="motivo" name="motivo">
-            <option value="duda">Duda sobre un producto</option>
-            <option value="asesoria">Asesoría personalizada</option>
-            <option value="escuela">Pedidos escolares / mayoreo</option>
-            <option value="otro">Otro</option>
+
+        <div style="margin-bottom: 18px;">
+          <label for="motivo" style="display: block; font-weight: 700; margin-bottom: 6px;">¿En qué podemos orientarte?:</label>
+          <select id="motivo" name="motivo"
+                  style="width: 100%; padding: 12px 16px; border: 2px solid #e2ddf0; border-radius: 12px; font-family: inherit; font-size: 1rem; outline: none; background: white;">
+            <option value="asesoria">Asesoría de juguetes por edad</option>
+            <option value="escuela">Pedidos escolares / mayoreo para guarderías</option>
+            <option value="duda">Duda sobre materiales y seguridad</option>
+            <option value="otro">Otro motivo</option>
           </select>
         </div>
-        <br>
-        <div>
-          <label for="mensaje">Mensaje:</label><br>
-          <textarea id="mensaje" name="mensaje" rows="5" cols="40" required placeholder="Escribe tu consulta aquí..."></textarea>
+
+        <div style="margin-bottom: 22px;">
+          <label for="mensaje" style="display: block; font-weight: 700; margin-bottom: 6px;">Cuéntanos tu duda:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe aquí tu consulta con toda confianza..."
+                    style="width: 100%; padding: 12px 16px; border: 2px solid #e2ddf0; border-radius: 12px; font-family: inherit; font-size: 1rem; outline: none; resize: vertical;"></textarea>
         </div>
-        <br>
-        <button type="submit">Enviar mensaje</button>
+
+        <button type="submit" class="btn" style="width: 100%; text-align: center;">¡Enviar Mensaje! 🚀</button>
+        
+        <!-- Mensaje de respuesta que activará JS -->
+        <div id="mensaje-exito" style="display: none; margin-top: 20px; padding: 14px; background: #e3f7ed; color: #2e8b57; border-radius: 12px; text-align: center; font-weight: 700;"></div>
       </form>
     </section>
 
+    <!-- Información de Atención -->
     <section>
-      <h3>Otros Medios de Atención</h3>
-      <p><strong>Correo directo:</strong> soporte@edutoys.ejemplo</p>
-      <p><strong>Horario de atención:</strong> Lunes a Viernes de 9:00 a 18:00 hrs</p>
+      <h3>Canales de Atención Directa 📞</h3>
+      <div class="cards-grid">
+        <div class="feature-box azul">
+          <span class="box-icon">📧</span>
+          <h4>Correo Escolar</h4>
+          <p>contacto@edutoys.ejemplo</p>
+        </div>
+        <div class="feature-box verde">
+          <span class="box-icon">⏰</span>
+          <h4>Horario de Soporte</h4>
+          <p>Lunes a Viernes: 9:00 - 18:00 hrs</p>
+        </div>
+        <div class="feature-box amarillo">
+          <span class="box-icon">📍</span>
+          <h4>Ubicación</h4>
+          <p>Campus Universitario / Proyecto Educativo</p>
+        </div>
+      </div>
     </section>
   </main>
-
-  <hr>
 
   <footer>
     <p>&copy; 2026 EduToys - Proyecto Escolar</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
