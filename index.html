@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>EduToys - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>EduToys</h1>
-    <p>Tienda de juguetes didácticos y estimulación temprana</p>
+    <div class="brand-container">
+      <img src="logo.png" alt="Logo de EduToys" class="logo-img">
+      <h1>Edu<span>Toys</span></h1>
+    </div>
+    <p>Juguetes que inspiran mentes curiosas 🧸🚀</p>
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" class="active">Inicio</a></li>
         <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
         <li><a href="productos.html">Productos / Servicios</a></li>
         <li><a href="contacto.html">Contacto</a></li>
@@ -20,34 +24,59 @@
     </nav>
   </header>
 
-  <hr>
-
   <main>
-    <section>
-      <h2>Bienvenido a EduToys</h2>
-      <p>Somos una tienda enfocada en ofrecer juguetes educativos para el aprendizaje, la creatividad y la estimulación temprana de los niños.</p>
+    <!-- Banner Principal -->
+    <section class="hero-banner">
+      <h2>¡Aprender Jugando es más Divertido! 🎉</h2>
+      <div id="mensaje-bienvenida"></div>
+      <p>Descubre herramientas didácticas creadas para estimular los sentidos, despertar la imaginación y acompañar a tus pequeños en cada aventura.</p>
+      <a href="productos.html" class="btn">¡Ver Juguetes Mágicos! ⭐</a>
     </section>
 
+    <!-- Pilares en Tarjetas Cuadradas -->
     <section>
-      <h3>Nuestros Enfoques Principales</h3>
-      <ul>
-        <li><strong>Aprendizaje:</strong> Juguetes que enseñan números, letras, formas y resolución de problemas.</li>
-        <li><strong>Creatividad:</strong> Herramientas para dibujar, construir e inventar historias.</li>
-        <li><strong>Estimulación Temprana:</strong> Materiales táctiles, sonoros y visuales para bebés y niños pequeños.</li>
-      </ul>
+      <h3>Nuestros 3 Superpoderes Didácticos ✨</h3>
+      <div class="cards-grid">
+        <div class="feature-box coral">
+          <span class="box-icon">🧠</span>
+          <h4>Mente Activa</h4>
+          <p>Potenciamos el razonamiento lógico, números y formas desde temprana edad.</p>
+        </div>
+        <div class="feature-box azul">
+          <span class="box-icon">🎨</span>
+          <h4>Imaginación Libre</h4>
+          <p>Piezas y bloques para inventar mundos sin instrucciones complicadas.</p>
+        </div>
+        <div class="feature-box verde">
+          <span class="box-icon">🌱</span>
+          <h4>Estimulación</h4>
+          <p>Colores, texturas y sonidos amigables para los primeros meses de vida.</p>
+        </div>
+      </div>
     </section>
 
+    <!-- Por qué elegirnos -->
     <section>
-      <h3>¿Por qué elegir juguetes educativos?</h3>
-      <p>El juego es la forma natural en que los niños descubren el mundo. Nuestros juguetes están pensados para acompañar su crecimiento de manera segura y divertida.</p>
+      <h3>¿Por qué elegir EduToys? 🧩</h3>
+      <div class="cards-grid">
+        <div class="feature-box amarillo">
+          <span class="box-icon">🛡️</span>
+          <h4>100% Seguros</h4>
+          <p>Pinturas libres de tóxicos, bordes suaves y piezas probadas contra asfixia.</p>
+        </div>
+        <div class="feature-box lila" style="border-color: var(--c-lila); box-shadow: 0 5px 0 #7a63b5;">
+          <span class="box-icon">📵</span>
+          <h4>Cero Pantallas</h4>
+          <p>Fomentamos el tacto real, la concentración y el juego cara a cara.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <hr>
-
   <footer>
-    <p>&copy; 2026 EduToys</p>
+    <p>&copy; 2026 EduToys - Proyecto Escolar</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
