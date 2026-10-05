@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>EduToys - Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EduToys: juguetes didácticos seguros que inspiran mentes curiosas.">
+  <title>EduToys - Juguetes que inspiran mentes curiosas</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,38 +15,36 @@
       <h1>Edu<span>Toys</span></h1>
     </div>
     <p>Juguetes que inspiran mentes curiosas 🧸🚀</p>
-    <nav>
+    <nav aria-label="Navegación principal">
       <ul>
-        <li><a href="index.html" class="active">Inicio</a></li>
-        <li><a href="quienes-somos.html">¿Quiénes somos?</a></li>
-        <li><a href="productos.html">Productos / Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="seguridad.html">Políticas de seguridad</a></li>
+        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li><a href="#nosotros">¿Quiénes somos?</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Banner Principal -->
-    <section class="hero-banner">
-      <h2>¡Aprender Jugando es más Divertido! 🎉</h2>
-      <div id="mensaje-bienvenida"></div>
+    <section class="hero-banner" id="inicio">
+      <h2>¡Aprender jugando es más divertido! 🎉</h2>
+      <div id="mensaje-bienvenida" aria-live="polite"></div>
       <p>Descubre herramientas didácticas creadas para estimular los sentidos, despertar la imaginación y acompañar a tus pequeños en cada aventura.</p>
-      <a href="productos.html" class="btn">¡Ver Juguetes Mágicos! ⭐</a>
+      <a href="#productos" class="btn">¡Ver juguetes mágicos! ⭐</a>
     </section>
 
-    <!-- Pilares en Tarjetas Cuadradas -->
     <section>
-      <h3>Nuestros 3 Superpoderes Didácticos ✨</h3>
+      <h3>Nuestros 3 superpoderes didácticos ✨</h3>
       <div class="cards-grid">
         <div class="feature-box coral">
           <span class="box-icon">🧠</span>
-          <h4>Mente Activa</h4>
+          <h4>Mente activa</h4>
           <p>Potenciamos el razonamiento lógico, números y formas desde temprana edad.</p>
         </div>
         <div class="feature-box azul">
           <span class="box-icon">🎨</span>
-          <h4>Imaginación Libre</h4>
+          <h4>Imaginación libre</h4>
           <p>Piezas y bloques para inventar mundos sin instrucciones complicadas.</p>
         </div>
         <div class="feature-box verde">
@@ -55,20 +55,168 @@
       </div>
     </section>
 
-    <!-- Por qué elegirnos -->
     <section>
       <h3>¿Por qué elegir EduToys? 🧩</h3>
       <div class="cards-grid">
         <div class="feature-box amarillo">
           <span class="box-icon">🛡️</span>
-          <h4>100% Seguros</h4>
+          <h4>100% seguros</h4>
           <p>Pinturas libres de tóxicos, bordes suaves y piezas probadas contra asfixia.</p>
         </div>
-        <div class="feature-box lila" style="border-color: var(--c-lila); box-shadow: 0 5px 0 #7a63b5;">
+        <div class="feature-box lila">
           <span class="box-icon">📵</span>
-          <h4>Cero Pantallas</h4>
+          <h4>Cero pantallas</h4>
           <p>Fomentamos el tacto real, la concentración y el juego cara a cara.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h3>Nuestra historia y pasión 💛</h3>
+      <p>En <strong>EduToys</strong> nacemos como un proyecto escolar convencido de que la infancia debe estar llena de color, exploración táctil y retos que diviertan sin aburrir.</p>
+      <div class="cards-grid">
+        <div class="feature-box azul">
+          <span class="box-icon">🚀</span>
+          <h4>Nuestra misión</h4>
+          <p>Llevar a los hogares y aulas juguetes seguros que ayuden al crecimiento motriz, cognitivo y social de los niños.</p>
+        </div>
+        <div class="feature-box coral">
+          <span class="box-icon">🔭</span>
+          <h4>Nuestra visión</h4>
+          <p>Ser la opción favorita de familias y docentes que buscan materiales de estimulación temprana de alta calidad.</p>
+        </div>
+      </div>
+      <h3>Los valores que nos mueven 🎈</h3>
+      <div class="cards-grid">
+        <div class="feature-box verde">
+          <span class="box-icon">❤️</span>
+          <h4>Cariño por los niños</h4>
+          <p>Cada producto se elige pensando en su bienestar y sonrisa.</p>
+        </div>
+        <div class="feature-box amarillo">
+          <span class="box-icon">🧼</span>
+          <h4>Calidad limpia</h4>
+          <p>Materiales nobles, sostenibles y respetuosos con el ambiente.</p>
+        </div>
+        <div class="feature-box lila">
+          <span class="box-icon">💡</span>
+          <h4>Creatividad total</h4>
+          <p>Juguetes que permiten miles de formas de jugar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos">
+      <h3>Catálogo de juguetes didácticos 🎪</h3>
+      <p>Selecciona por edad y acompaña a tus hijos con las herramientas exactas para su etapa de desarrollo.</p>
+      <div class="cards-grid">
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-verde">0 a 12 meses</span>
+            <div class="product-emoji" aria-hidden="true">🔔</div>
+            <h4>Sonajeros y tapetes sensoriales</h4>
+            <p>Texturas suaves, contrastes y sonajeros ligeros para estimular el agarre y los sentidos.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Sonajeros y Tapetes Sensoriales">Ver juguete 🔍</button>
+        </article>
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-azul">1 a 4 años</span>
+            <div class="product-emoji" aria-hidden="true">🧱</div>
+            <h4>Bloques de madera creativos</h4>
+            <p>Piezas livianas, barnices al agua y bordes redondeados para construir sin parar.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Bloques de Madera Creativos">Ver juguete 🔍</button>
+        </article>
+        <article class="product-card">
+          <div>
+            <span class="badge-edad badge-lila">3 a 6 años</span>
+            <div class="product-emoji" aria-hidden="true">🧩</div>
+            <h4>Rompecabezas y lógica STEM</h4>
+            <p>Retos visuales que introducen números, figuras geométricas y deducción de manera entretenida.</p>
+          </div>
+          <button class="btn btn-info-producto" data-nombre="Rompecabezas y Lógica STEM">Ver juguete 🔍</button>
+        </article>
+      </div>
+      <h3>Servicios especiales 🎒</h3>
+      <div class="cards-grid">
+        <div class="feature-box amarillo">
+          <span class="box-icon">📦</span>
+          <h4>Kits escolares</h4>
+          <p>Paquetes con descuento y surtido didáctico para estancias infantiles y preescolar.</p>
+        </div>
+        <div class="feature-box coral">
+          <span class="box-icon">👩‍🏫</span>
+          <h4>Asesoría personalizada</h4>
+          <p>Te orientamos según la edad e intereses del niño para encontrar la mejor opción.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="seguridad">
+      <h3>Seguridad y tranquilidad ante todo 🛡️</h3>
+      <p>Cada pieza de nuestro catálogo pasa por pruebas de seguridad física y química, porque lo más valioso son tus pequeños.</p>
+      <div class="cards-grid">
+        <div class="feature-box verde">
+          <span class="box-icon">🌿</span>
+          <h4>Pinturas no tóxicas</h4>
+          <p>Barnices y tintes en base acuosa, libres de plomo, metales pesados y ftalatos.</p>
+        </div>
+        <div class="feature-box amarillo">
+          <span class="box-icon">✨</span>
+          <h4>Bordes suaves</h4>
+          <p>Maderas pulidas y acabados redondeados que eliminan astillas o aristas vivas.</p>
+        </div>
+        <div class="feature-box coral">
+          <span class="box-icon">📏</span>
+          <h4>Control anti-asfixia</h4>
+          <p>Piezas probadas con diámetros de seguridad para evitar atragantamientos en menores de 3 años.</p>
+        </div>
+      </div>
+      <h3>Consejos de juego seguro en casa 💡</h3>
+      <ul class="lista-destacada">
+        <li>🏷️ <strong>Respeta las edades sugeridas:</strong> El rango garantiza que el juguete sea adecuado al desarrollo motriz.</li>
+        <li>👀 <strong>Supervisión activa:</strong> En etapas de gateo y primeros pasos, acompaña siempre el juego libre.</li>
+        <li>🧼 <strong>Limpieza fácil:</strong> Limpia las piezas de madera con un paño ligeramente húmedo sin sumergirlas.</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <div class="hero-banner">
+        <h2>¡Hablemos de juego y aprendizaje! 📬</h2>
+        <p>¿Tienes dudas sobre qué juguete elegir o buscas paquetes didácticos para tu escuela? ¡Escríbenos!</p>
+      </div>
+      <h3>Envíanos un mensaje 💌</h3>
+      <form id="formulario-contacto" class="contact-form">
+        <div>
+          <label for="nombre">Nombre de contacto:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ej. Mariana López">
+        </div>
+        <div>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required placeholder="mariana@ejemplo.com">
+        </div>
+        <div>
+          <label for="motivo">¿En qué podemos orientarte?</label>
+          <select id="motivo" name="motivo">
+            <option value="asesoria">Asesoría de juguetes por edad</option>
+            <option value="escuela">Pedidos escolares / mayoreo para guarderías</option>
+            <option value="duda">Duda sobre materiales y seguridad</option>
+            <option value="otro">Otro motivo</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensaje">Cuéntanos tu duda:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe aquí tu consulta con toda confianza..."></textarea>
+        </div>
+        <button type="submit" class="btn">¡Enviar mensaje! 🚀</button>
+        <div id="mensaje-exito" class="success-message" role="status" aria-live="polite"></div>
+      </form>
+      <h3>Canales de atención directa 📞</h3>
+      <div class="cards-grid">
+        <div class="feature-box azul"><span class="box-icon">📧</span><h4>Correo escolar</h4><p>contacto@edutoys.ejemplo</p></div>
+        <div class="feature-box verde"><span class="box-icon">⏰</span><h4>Horario de soporte</h4><p>Lunes a viernes: 9:00 - 18:00 hrs</p></div>
+        <div class="feature-box amarillo"><span class="box-icon">📍</span><h4>Ubicación</h4><p>Calle Principal #123, Ciudad</p></div>
       </div>
     </section>
   </main>

@@ -305,3 +305,107 @@ footer {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+.feature-box.lila {
+  border-color: var(--c-lila);
+  box-shadow: 0 5px 0 var(--c-lila-dark);
+}
+
+.product-emoji {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  max-width: 650px;
+  margin: 0 auto 30px;
+}
+
+.contact-form > div {
+  margin-bottom: 18px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e2ddf0;
+  border-radius: 12px;
+  font: inherit;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--c-lila);
+  box-shadow: 0 0 0 3px rgba(155, 132, 212, 0.15);
+}
+
+.contact-form .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.success-message {
+  display: none;
+  margin-top: 20px;
+  padding: 14px;
+  background: #e3f7ed;
+  color: #2e8b57;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 16px 12px;
+  }
+
+  header h1 {
+    font-size: 2.1rem;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  main {
+    margin: 20px auto;
+    padding: 0 12px;
+  }
+
+  section {
+    padding: 22px 17px;
+    border-radius: 20px;
+  }
+
+  .hero-banner {
+    padding: 30px 17px;
+  }
+}
